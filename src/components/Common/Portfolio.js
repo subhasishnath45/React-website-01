@@ -56,9 +56,11 @@ render(){
             </div>
           </div>
           <div className="row">
-            {portfolios.map((portfolio, index)=>{
-              return (<PortfolioItem {...portfolio} key={index} />);
-            })}
+            {
+              portfolios.map((portfolio, index)=>{
+                return (<PortfolioItem {...portfolio} key={index} />);
+              })
+            }
           </div>
         </div>
       </section>
